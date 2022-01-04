@@ -1,0 +1,276 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+
+}
+.navbar {
+	background:#000;
+}
+.navbar-nav  li a:hover {
+	color:#fff !important;
+}
+.navbar .webT{
+	font-size: 20px;
+}
+
+/*Slider*/
+.carousel-item{
+	height: 500px;
+}
+.crs-img-1{
+	background: url('../img/slider-img1.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+.crs-img-2{
+	background: url('../img/slider-img2.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+.crs-img-3{
+	background: url('../img/slider-img3.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+.crs-img-4{
+	background: url('../img/slider-img4.jpg');
+	background-size: cover;
+	background-position: center;
+	width:100%;
+}
+
+
+/*Showcase*/
+#showcase .fas{
+	font-size:35px;
+
+}
+
+/*Get Started*/
+#get-started{
+	background:url('../img/showcase2.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	min-height: 250px;
+}
+#get-started .inner-overlay{
+	background:rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%
+}
+
+/*Info */
+#info .infoS{
+	margin-top:70px;
+}
+#info img{
+	border-radius: 5px;
+}
+
+/*Video*/
+#video{
+	position: relative;
+	background:url('../img/video.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 300px;
+
+}
+#video .video-overlay{
+	position: absolute;
+	min-height: 300px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+}
+#video .fas{
+	color: #ff0000;
+	font-size: 50px;
+}
+
+/*Gallery*/
+#gallery img{
+	max-height: 200px;
+	width: 100%;
+
+}
+
+/*Footer*/
+#footer{
+	background:#000;
+}
+#footer .fab{
+	font-size:25px;
+	color:#fff;
+	border: 1px solid #7f8c8d;
+	padding: 5px;
+}
+#footer .fab:hover{
+	color: #ff0000;
+	border-color: #000;
+}
+
+/*About Page*/
+
+/*About Section*/
+#about{
+	background:url('../img/about/back.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	position: relative;
+}
+#about .inner-overlay, #services .inner-overlay, #blog .inner-overlay ,
+#contact .inner-overlay{
+	background:rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 300px;
+}
+#about-services .fas{
+	font-size:50px;
+}
+
+/*Services Section*/
+/*Services Header*/
+#services{
+	background:url('../img/slider-img4.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	position: relative;
+}
+
+#services-faq{
+	height: 400px;
+}
+#services-faq .card{
+	cursor: pointer;
+}
+#blog{
+	background:url('../img/video.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	position: relative;
+}
+#blog-post img{
+	height: 200px;
+	width: 100%;
+}
+#contact{
+	background:url('../img/gallery7.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 300px;
+	position: relative;
+}
+
+
+@media (max-width: 991px){
+	#info .infoS{
+		margin-top:0px;
+	}
+	#gallery img{
+		height: 120px;
+	}
+}
+@media(max-width:767px){
+
+	#get-started .gC{
+		margin-top: 0 !important;
+	}
+	#info p{
+		font-size: 15px;
+		margin-top: 0;
+	}
+	#info h3{
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+	#about-services .card {
+		margin: 5px 0;
+	}
+	#services-faq h5{
+		font-size: 13px;
+	}
+	#services-faq p{
+		font-size: 10px;
+	}
+	#services-table .text-center.display-4 {
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 575px){
+	#showcase .col-lg-4.col-md-4{
+		width: 60%;
+		margin: 0 auto;
+	}
+	#showcase h3{
+		margin: 0;
+	}
+	#info .infoS{
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom:25px;
+	}
+	#gallery img{
+		width: 80%;
+		height: 200px;
+	}
+
+	#gallery .col-lg-4.col-md-4.col-sm-4{
+		width: 80%;
+		height: 200px;
+		margin: 5px auto;
+		margin-left: 50px;
+	}
+
+	#services-faq{
+		height: 600px;
+	}
+}
+@media(max-width: 420px){
+	.navbar .navbar-brand {
+		width: 75%;
+	}
+	#myCarousel .display-4    {
+		font-size: 45px !important;
+	}
+	#showcase .lead{
+		font-size: 16px ;
+	}
+	#get-started  .lead{
+		font-size: 16px ;
+		margin-top: 0;
+	}
+	#get-started  h3{
+		margin-bottom: 0;
+	}
+	#gallery .col-lg-4.col-md-4.col-sm-4{
+		width: 100%;
+		height: 200px;
+		margin: 5px auto;
+		margin-left: 50px;
+	}	
+}
+
+
